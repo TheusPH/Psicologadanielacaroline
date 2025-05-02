@@ -1,0 +1,661 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #FFEAEA;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+    /* base para rem */
+}
+
+/* Cabeçalho */
+
+.topo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2.5rem;
+}
+
+.esquerda {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 2.5rem;
+}
+
+#logoDani {
+    width: 40vw;
+    margin-bottom: 4.375rem;
+    align-self: flex-end;
+}
+
+.texto-simbolo1 {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    align-self: center;
+}
+
+.titulo1 {
+    font-size: 3rem;
+}
+
+.simbolo1 {
+    width: 10vw;
+    height: auto;
+}
+
+.direita #fotoDani {
+    width: 33vw;
+    max-width: 100%;
+    border-radius: 0.625rem;
+}
+
+.botao {
+    transition: background-color 1s;
+    display: flex;
+    margin-top: 3.125rem;
+    color: black;
+    background-color: white;
+    border: 0.5px solid white;
+    border-radius: 100px;
+    padding: 1.25rem 2.5rem;
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    width: fit-content;
+    align-self: center;
+    box-shadow: 0 0 3.75rem black;
+    text-decoration: none;
+}
+
+.botao:hover {
+    color: white;
+    background-color: black;
+    border: 1px solid black;
+    font-weight: bold;
+    box-shadow: 0 0 1.875rem black;
+}
+
+/* Minha história */
+
+.top2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2.5rem;
+}
+
+.esquerda2 {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 2.5rem;
+    align-self: flex-end;
+}
+
+#minhaHistoria {
+    margin-left: 7.5rem;
+    width: 26vw;
+    height: auto;
+    margin-bottom: 5.313rem;
+}
+
+.direita2 {
+    font-size: 1.25rem;
+}
+
+.simbolo2 {
+    width: 13vw;
+    height: auto;
+    margin-left: 15.625rem;
+}
+
+/* Atendimentos */
+
+.atendimento {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 1.563rem;
+}
+
+.distancia {
+    margin-left: 9.375rem;
+}
+
+.coluna {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 6.25rem;
+}
+
+.coluna>div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#fotoAtendimento {
+    width: 12.5rem;
+}
+
+#tLetras {
+    text-align: center;
+    font-size: 2.188rem;
+    font-weight: normal;
+}
+
+.top3 {
+    display: flex;
+    flex-direction: row;
+    padding: 2.5rem;
+}
+
+.esquerda3 {
+    margin-left: 9.375rem;
+}
+
+.direita3>img {
+    width: 40vw;
+    height: auto;
+}
+
+/* Último */
+
+.top4 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.esquerda4 {
+    width: 43.75vw;
+}
+
+.esquerda4>h1 {
+    font-weight: normal;
+    font-size: 3.125rem;
+    letter-spacing: -0.25rem;
+}
+
+.botao2 {
+    transition: background-color 1s;
+    display: flex;
+    margin-top: 3.125rem;
+    color: black;
+    background-color: white;
+    border: 0.5px solid white;
+    border-radius: 100px;
+    padding: 1.25rem 2.5rem;
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    width: fit-content;
+    align-self: center;
+    box-shadow: 0 0 3.75rem black;
+    text-decoration: none;
+}
+
+.botao2:hover {
+    color: white;
+    background-color: black;
+    border: 1px solid black;
+    font-weight: bold;
+    box-shadow: 0 0 1.875rem black;
+}
+
+.direita4>img {
+    width: 21.875rem;
+    height: auto;
+    margin-left: 5rem;
+}
+
+/* Rodapé */
+
+footer {
+    background-color: #FFDBDB;
+    margin-top: 6.25rem;
+}
+
+.top5 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: flex-start;
+    margin-left: 1.25rem;
+}
+
+.entreEm {
+    justify-self: center;
+}
+
+.redesSocias {
+    margin-top: 0;
+}
+
+.imgFinal {
+    justify-self: end;
+}
+
+.imgFinal>img {
+    width: 18.75rem;
+    height: auto;
+    margin: 0 0.625rem 0.313rem 0;
+}
+
+.arumar {
+    display: flex;
+    flex-direction: row;
+}
+
+#face {
+    display: flex;
+    gap: 0.625rem;
+    margin-top: 0.156rem;
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+#insta {
+    display: flex;
+    gap: 0.625rem;
+    width: 1.875rem;
+    height: auto;
+}
+
+.link1 {
+    text-decoration: none;
+    color: black;
+}
+
+/* Fim rodapé */
+
+/* Responsividade */
+
+@media (max-width: 1024px) {
+
+    /* Ajustes gerais */
+    body {
+        font-size: 18px;
+    }
+
+    h1 {
+        font-size: 36px;
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+
+    .distancia {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
+    /* Cabeçalho */
+    .topo {
+        padding: 30px;
+        align-items: center;
+    }
+
+    .esquerda {
+        padding-right: 30px;
+    }
+
+    #logoDani {
+        width: 450px;
+        margin-bottom: 50px;
+    }
+
+    .titulo1 {
+        font-size: 38px;
+    }
+
+    .simbolo1 {
+        width: 120px;
+    }
+
+    .direita #fotoDani {
+        width: 400px;
+    }
+
+    .botao {
+        padding: 18px 35px;
+        font-size: 26px;
+        margin-top: 40px;
+    }
+
+    /* Minha história */
+    .top2 {
+        padding: 30px;
+        align-items: center;
+    }
+
+    .esquerda2 {
+        padding-right: 30px;
+        align-self: center;
+    }
+
+    #minhaHistoria {
+        width: 300px;
+        margin-left: 50px;
+        margin-bottom: 50px;
+    }
+
+    .direita2 {
+        font-size: 18px;
+    }
+
+    .simbolo2 {
+        width: 150px;
+        margin-left: auto;
+        margin-right: 50px;
+    }
+
+    /* Atendimentos */
+    .atendimento {
+        font-size: 22px;
+    }
+
+    .coluna {
+        gap: 50px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #fotoAtendimento {
+        width: 180px;
+    }
+
+    #tLetras {
+        font-size: 30px;
+    }
+
+    .top3 {
+        padding: 30px;
+        align-items: center;
+    }
+
+    .esquerda3 {
+        margin-left: 50px;
+        font-size: 18px;
+        flex: 1;
+    }
+
+    .direita3 {
+        flex: 1;
+        text-align: center;
+    }
+
+    .direita3>img {
+        width: 80%;
+        max-width: 500px;
+    }
+
+    .top4 {
+        align-items: center;
+        padding: 0 50px;
+    }
+
+    .esquerda4 {
+        width: 60%;
+    }
+
+    .esquerda4>h1 {
+        font-size: 40px;
+        letter-spacing: -2px;
+    }
+
+    .botao2 {
+        padding: 18px 35px;
+        font-size: 26px;
+        margin-top: 40px;
+    }
+
+    .direita4 {
+        width: 40%;
+        text-align: right;
+    }
+
+    .direita4>img {
+        width: 230px;
+    }
+
+    .top5 {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        align-items: flex-start;
+        padding: 30px 20px;
+    }
+
+    .entreEm {
+        justify-self: start;
+    }
+
+    .redesSocias {
+        justify-self: center;
+    }
+
+    .imgFinal {
+        justify-self: end;
+        padding-right: 20px;
+    }
+
+    .imgFinal>img {
+        width: 180px;
+        height: auto;
+    }
+}
+
+@media (max-width: 767px) {
+
+    /* inicio */
+
+    .topo {
+        align-items: center;
+        text-align: center;
+        padding: 1rem;
+        justify-content: center;
+    }
+
+    .esquerda {
+        flex: 1;
+        max-width: 50%;
+    }
+
+    #logoDani {
+        align-items: center;
+        width: 50vw;
+        margin-bottom: 2rem;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+
+    .direita {
+        align-self: flex-start;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        max-width: 50%;
+        flex: 1;
+    }
+
+    #fotoDani {
+        justify-content: start;
+        width: 75vw;
+        max-width: 100%;
+        margin-left: 20px;
+    }
+
+    .simbolo1 {
+        width: 15vw;
+    }
+
+    .titulo1 {
+        font-size: 1.0rem;
+    }
+
+    .botao {
+        padding: 5px 10px;
+        width: 75px;
+        font-size: 0.7rem;
+        margin: 0 auto;
+        margin-top: 20px;
+        box-shadow: 0 0 1.9rem black;
+    }
+
+    /* parte 2 */
+
+    .top2 {
+        align-items: center;
+        text-align: center;
+        padding: 1rem;
+        justify-content: center;
+    }
+
+    .esquerda2 {
+        flex: 1;
+        width: 50%;
+    }
+
+    .direita2>h2 {
+        font-size: 15px;
+    }
+
+    .direita2 {
+        flex: 1;
+        width: 50%;
+        font-size: 6.5px;
+    }
+
+    .simbolo2 {
+        width: 75px;
+        margin: 0 auto;
+        margin-top: 5px;
+    }
+
+    #minhaHistoria {
+        width: 60vw;
+        max-width: 100%;
+        margin: 1rem auto;
+    }
+
+    /* parte 3 */
+
+    .atendimento {
+        margin: 0 auto;
+        justify-content: space-evenly;
+    }
+
+    .atendimento>h1 {
+        font-size: 20px;
+    }
+
+    #fotoAtendimento {
+        flex-direction: row;
+        width: 100px;
+    }
+
+    #tLetras {
+        font-size: 10px;
+    }
+
+    .top3 {
+        align-items: center;
+        text-align: center;
+        padding: 1rem;
+        justify-content: center;
+        gap: 5px;
+    }
+
+    .esquerda3 {
+        font-size: 7px;
+        margin: 0 auto;
+    }
+
+    .direita3>img {
+        width: 60vw;
+        max-width: 100%;
+        margin: 1rem auto;
+    }
+
+    /* Parte 4 */
+
+    .top4 {
+        align-items: center;
+        text-align: center;
+        padding: 1rem;
+        justify-content: center;
+        gap: 5px;
+        display: flex;
+    }
+
+    .esquerda4>h1 {
+        text-align: left;
+        font-size: 1rem;
+        letter-spacing: normal;
+    }
+
+    .direita4 {
+        align-self: flex-start;
+    }
+
+    .direita4>img {
+        margin: 0 auto;
+        width: 60vw;
+        max-width: 100%;
+        margin-top: 15px;
+    }
+
+    .botao2 {
+        padding: 5px 10px;
+        width: 75px;
+        font-size: 0.7rem;
+        margin-top: 20px;
+        box-shadow: 0 0 1.9rem black;
+        justify-content: left;
+    }
+
+    /* final */
+    .top5 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 1rem;
+    }
+
+    .entreEm {
+        font-size: 15px;
+    }
+
+    .arumar {
+        align-items: baseline;
+        justify-content: space-evenly;
+    }
+
+    .imgFinal {
+        justify-self: center;
+    }
+
+    .imgFinal img {
+        width: 50vw;
+        max-width: 100%;
+        margin-left: 30px;
+    }
+
+    #face,
+    #insta {
+        align-self: center;
+        width: 1.5rem;
+        height: auto;
+    }
+
+}
+
+/* Fim da responsividade */
