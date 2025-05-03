@@ -458,27 +458,29 @@ footer {
 
     .topo {
         align-items: center;
-        text-align: center;
         padding: 1rem;
         justify-content: center;
+        height: 275px;
+        margin-top: 10px;
     }
 
     .esquerda {
         flex: 1;
-        max-width: 50%;
+        max-width: 100%;
+        padding: 0;
     }
 
     #logoDani {
         align-items: center;
-        width: 50vw;
+        width: 90vw;
         margin-bottom: 2rem;
         margin: 0 auto;
-        margin-bottom: 20px;
+        margin-bottom: 40px;
     }
 
     .direita {
-        align-self: flex-start;
-        display: flex;
+        align-self: flex-end;
+        display: none;
         justify-content: center;
         width: 100%;
         max-width: 50%;
@@ -489,29 +491,33 @@ footer {
         justify-content: start;
         width: 75vw;
         max-width: 100%;
-        margin-left: 20px;
     }
 
     .simbolo1 {
-        width: 15vw;
+        width: 18vw;
     }
 
     .titulo1 {
-        font-size: 1.0rem;
+        font-size: 1.6rem;
     }
 
     .botao {
-        padding: 5px 10px;
-        width: 75px;
-        font-size: 0.7rem;
+        display: flex;
+        padding: 10px 40px;
+        width: 100px;
+        justify-content: space-around;
+        font-size: 1.0rem;
         margin: 0 auto;
-        margin-top: 20px;
+        margin-top: 40px;
         box-shadow: 0 0 1.9rem black;
+        white-space: nowrap;
     }
 
     /* parte 2 */
 
     .top2 {
+        display: flex;
+        flex-direction: column-reverse;
         align-items: center;
         text-align: center;
         padding: 1rem;
@@ -520,23 +526,26 @@ footer {
 
     .esquerda2 {
         flex: 1;
-        width: 50%;
+        width: 100%;
+        padding: 0;
     }
 
     .direita2>h2 {
+        font-size: 30px;
+    }
+
+    .direita2>span {
         font-size: 15px;
     }
 
     .direita2 {
         flex: 1;
-        width: 50%;
+        width: 100%;
         font-size: 6.5px;
     }
 
     .simbolo2 {
-        width: 75px;
-        margin: 0 auto;
-        margin-top: 5px;
+        display: none;
     }
 
     #minhaHistoria {
@@ -553,19 +562,25 @@ footer {
     }
 
     .atendimento>h1 {
-        font-size: 20px;
+        font-size: 30px;
+    }
+
+    .coluna {
+        display: flex;
+        flex-direction: column;
     }
 
     #fotoAtendimento {
-        flex-direction: row;
-        width: 100px;
+        width: 180px;
     }
 
     #tLetras {
-        font-size: 10px;
+        font-size: 30px;
     }
 
     .top3 {
+        display: flex;
+        flex-direction: column-reverse;
         align-items: center;
         text-align: center;
         padding: 1rem;
@@ -574,19 +589,20 @@ footer {
     }
 
     .esquerda3 {
-        font-size: 7px;
+        font-size: 15px;
         margin: 0 auto;
     }
 
     .direita3>img {
-        width: 60vw;
-        max-width: 100%;
+        width: 100.5vw;
         margin: 1rem auto;
     }
 
     /* Parte 4 */
 
     .top4 {
+        display: flex;
+        flex-direction: column-reverse;
         align-items: center;
         text-align: center;
         padding: 1rem;
@@ -595,30 +611,44 @@ footer {
         display: flex;
     }
 
+    .distancia {
+        margin: 0;
+    }
+
     .esquerda4>h1 {
         text-align: left;
-        font-size: 1rem;
+        font-size: 1.7rem;
         letter-spacing: normal;
+        width: auto;
     }
 
     .direita4 {
-        align-self: flex-start;
+        align-self: center;
+        width: auto;
     }
 
     .direita4>img {
         margin: 0 auto;
         width: 60vw;
-        max-width: 100%;
-        margin-top: 15px;
+        margin-bottom: 15px;
     }
 
     .botao2 {
-        padding: 5px 10px;
+        /* padding: 5px 10px;
         width: 75px;
         font-size: 0.7rem;
         margin-top: 20px;
         box-shadow: 0 0 1.9rem black;
-        justify-content: left;
+        justify-content: left; */
+        display: flex;
+        padding: 10px 40px;
+        width: 100px;
+        justify-content: space-around;
+        font-size: 1.0rem;
+        margin: 0 auto;
+        margin-top: 40px;
+        box-shadow: 0 0 1.9rem black;
+        white-space: nowrap;
     }
 
     /* final */
