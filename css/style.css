@@ -536,7 +536,6 @@ footer {
         width: 90vw;
         margin-bottom: 2rem;
         margin: 0 auto;
-        margin-bottom: 40px;
     }
 
     .direita {
@@ -634,6 +633,7 @@ footer {
     .coluna {
         display: flex;
         flex-direction: column;
+        gap: 0px;
     }
 
     #fotoAtendimento {
@@ -679,6 +679,10 @@ footer {
 
     .distancia {
         margin: 0;
+    }
+
+    .esquerda4 {
+        width: 275px;
     }
 
     .esquerda4>h1 {
