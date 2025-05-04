@@ -96,6 +96,10 @@ body {
     align-self: flex-end;
 }
 
+.fotoDani2 {
+    display: none;
+}
+
 #minhaHistoria {
     margin-left: 7.5rem;
     width: 26vw;
@@ -277,99 +281,129 @@ footer {
 
 @media (max-width: 1024px) {
 
-    /* Ajustes gerais */
-    body {
-        font-size: 18px;
-    }
+    /* inicio */
 
-    h1 {
-        font-size: 36px;
-    }
-
-    h2 {
-        font-size: 28px;
-    }
-
-    .distancia {
-        margin-left: 50px;
-        margin-right: 50px;
-    }
-
-    /* Cabeçalho */
     .topo {
-        padding: 30px;
         align-items: center;
+        padding: 1rem;
+        justify-content: center;
+        margin-top: 10px;
     }
 
     .esquerda {
-        padding-right: 30px;
+        flex: 1;
+        max-width: 100%;
+        padding: 0;
     }
 
     #logoDani {
-        width: 450px;
-        margin-bottom: 50px;
+        align-items: center;
+        width: 90vw;
+        margin-bottom: 2rem;
+        margin: 0 auto;
     }
 
-    .titulo1 {
-        font-size: 38px;
+    .direita {
+        align-self: flex-end;
+        display: none;
+        justify-content: center;
+        width: 100%;
+        max-width: 50%;
+        flex: 1;
     }
 
     .simbolo1 {
-        width: 120px;
+        width: 22vw;
     }
 
-    .direita #fotoDani {
-        width: 400px;
+    .titulo1 {
+        margin-top: 55px;
+        font-size: 2.6rem;
     }
 
     .botao {
-        padding: 18px 35px;
-        font-size: 26px;
+        display: flex;
+        padding: 20px 55px;
+        width: 100px;
+        justify-content: center;
+        font-size: 1.3rem;
+        margin: 0 auto;
         margin-top: 40px;
+        box-shadow: 0 0 1.9rem black;
+        white-space: nowrap;
     }
 
-    /* Minha história */
+    /* parte 2 */
+
     .top2 {
-        padding: 30px;
+        display: flex;
+        flex-direction: column-reverse;
         align-items: center;
-    }
-
-    .esquerda2 {
-        padding-right: 30px;
-        align-self: center;
-    }
-
-    #minhaHistoria {
-        width: 300px;
-        margin-left: 50px;
-        margin-bottom: 50px;
-    }
-
-    .direita2 {
-        font-size: 18px;
-    }
-
-    .simbolo2 {
-        width: 150px;
-        margin-left: auto;
-        margin-right: 50px;
-    }
-
-    /* Atendimentos */
-    .atendimento {
-        font-size: 22px;
-    }
-
-    .coluna {
-        gap: 50px;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        flex-wrap: wrap;
+        text-align: center;
+        padding: 1rem;
         justify-content: center;
     }
 
+    .esquerda2 {
+        flex: 1;
+        width: 100%;
+        padding: 0;
+    }
+
+    .fotoDani2 {
+        display: flex;
+        width: 300px;
+        height: auto;
+        margin: 0 auto;
+        margin-top: 20px;
+        border-radius: 10%;
+    }
+
+    .direita2>h2 {
+        font-size: 40px;
+    }
+
+    .direita2>span {
+        font-size: 25px;
+    }
+
+    .direita2 {
+        flex: 1;
+        width: 100%;
+        font-size: 6.5px;
+    }
+
+    .simbolo2 {
+        display: none;
+    }
+
+    #minhaHistoria {
+        width: 60vw;
+        max-width: 100%;
+        margin: 1rem auto;
+        display: none;
+    }
+
+    /* parte 3 */
+
+    .atendimento {
+        margin: 0 auto;
+        justify-content: space-evenly;
+    }
+
+    .atendimento>h1 {
+        font-size: 50px;
+    }
+
+    .coluna {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 200px;
+    }
+
     #fotoAtendimento {
-        width: 180px;
+        width: 250px;
     }
 
     #tLetras {
@@ -377,77 +411,104 @@ footer {
     }
 
     .top3 {
-        padding: 30px;
+        display: flex;
+        flex-direction: column-reverse;
         align-items: center;
+        text-align: center;
+        padding: 1rem;
+        justify-content: center;
+        gap: 5px;
     }
 
     .esquerda3 {
-        margin-left: 50px;
-        font-size: 18px;
-        flex: 1;
-    }
-
-    .direita3 {
-        flex: 1;
-        text-align: center;
+        font-size: 20px;
+        margin: 0 auto;
     }
 
     .direita3>img {
-        width: 80%;
-        max-width: 500px;
+        width: 100.5vw;
+        margin: 1rem auto;
     }
+
+    /* Parte 4 */
 
     .top4 {
+        display: flex;
+        flex-direction: column-reverse;
         align-items: center;
-        padding: 0 50px;
+        text-align: center;
+        padding: 1rem;
+        justify-content: center;
+        gap: 5px;
+        display: flex;
     }
 
-    .esquerda4 {
-        width: 60%;
+    .distancia {
+        margin: 0;
     }
 
     .esquerda4>h1 {
-        font-size: 40px;
-        letter-spacing: -2px;
-    }
-
-    .botao2 {
-        padding: 18px 35px;
-        font-size: 26px;
-        margin-top: 40px;
+        text-align: left;
+        font-size: 2.7rem;
+        letter-spacing: normal;
+        width: 0 auto;
     }
 
     .direita4 {
-        width: 40%;
-        text-align: right;
+        align-self: center;
+        width: auto;
     }
 
     .direita4>img {
-        width: 230px;
+        margin: 0 auto;
+        width: 40vw;
+        margin-bottom: 15px;
     }
 
+    .botao2 {
+        display: flex;
+        padding: 20px 55px;
+        width: 100px;
+        justify-content: center;
+        font-size: 1.3rem;
+        margin: 0 auto;
+        margin-top: 40px;
+        box-shadow: 0 0 1.9rem black;
+        white-space: nowrap;
+    }
+
+    /* final */
     .top5 {
-        grid-template-columns: repeat(3, 1fr);
-        gap: 20px;
-        align-items: flex-start;
-        padding: 30px 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 1rem;
     }
 
     .entreEm {
-        justify-self: start;
+        font-size: 15px;
     }
 
-    .redesSocias {
-        justify-self: center;
+    .arumar {
+        align-items: baseline;
+        justify-content: space-evenly;
     }
 
     .imgFinal {
-        justify-self: end;
-        padding-right: 20px;
+        justify-self: center;
     }
 
-    .imgFinal>img {
-        width: 180px;
+    .imgFinal img {
+        width: 50vw;
+        max-width: 100%;
+        margin-left: 30px;
+    }
+
+    #face,
+    #insta {
+        align-self: center;
+        width: 1.5rem;
         height: auto;
     }
 }
@@ -487,11 +548,6 @@ footer {
         flex: 1;
     }
 
-    #fotoDani {
-        justify-content: start;
-        width: 75vw;
-        max-width: 100%;
-    }
 
     .simbolo1 {
         width: 18vw;
@@ -530,6 +586,15 @@ footer {
         padding: 0;
     }
 
+    .fotoDani2 {
+        display: flex;
+        width: 200px;
+        height: auto;
+        margin: 0 auto;
+        margin-top: 10px;
+        border-radius: 10%;
+    }
+
     .direita2>h2 {
         font-size: 30px;
     }
@@ -552,6 +617,7 @@ footer {
         width: 60vw;
         max-width: 100%;
         margin: 1rem auto;
+        display: none;
     }
 
     /* parte 3 */
