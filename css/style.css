@@ -78,6 +78,12 @@ body {
     box-shadow: 0 0 1.875rem black;
 }
 
+.contar {
+    padding: 5px;
+    text-align: center;
+    background-color: #f0b4b486;
+}
+
 /* Minha história */
 
 .top2 {

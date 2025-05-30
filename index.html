@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Psicologa Daniela Caroline</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-database.js"></script>
 </head>
 
 <body>
@@ -28,6 +30,10 @@
         </div>
     </header>
     <br><br><br>
+    <div class="contar">
+        <h1>Total de visitas:</h1>
+        <h2 id="contador">Carregando...</h2>
+    </div>
     <main>
         <div>
             <!-- Minha história -->
@@ -156,6 +162,37 @@
             </div>
         </div>
     </footer>
+
+    <script>
+         // Configuração do Firebase
+            const firebaseConfig = {
+                apiKey: "AIzaSyDoYy5IrJ60ETcaw5pnOG2BaxTTgOD1apM",
+                authDomain: "site-psicologa-dani.firebaseapp.com",
+                databaseURL: "https://site-psicologa-dani-default-rtdb.firebaseio.com",
+                projectId: "site-psicologa-dani",
+                storageBucket: "site-psicologa-dani.appspot.com",
+                messagingSenderId: "290425493735",
+                appId: "1:290425493735:web:dc2d6c8af863854266a42",
+                measurementId: "G-WT0VM5VEFH"
+            };
+
+            // Inicializa o Firebase
+            const app = firebase.initializeApp(firebaseConfig);
+            const database = firebase.database();
+
+            // Referência ao contador
+            const contadorRef = database.ref("visitas");
+
+            // Atualiza contador no banco
+            contadorRef.transaction((valorAtual) => {
+                return (valorAtual || 0) + 1;
+            });
+
+            // Mostra o contador na tela
+            contadorRef.on("value", (snapshot) => {
+                document.getElementById("contador").innerText = snapshot.val();
+            });
+    </script>
 </body>
 
 </html>
