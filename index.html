@@ -190,8 +190,19 @@
 
             // Mostra o contador na tela
             contadorRef.on("value", (snapshot) => {
-                document.getElementById("contador").innerText = snapshot.val();
-            });
+                    const contador = document.getElementById("contador");
+                    const valorFinal = snapshot.val();
+                    let valorAtual = 0;
+
+                    const animacao = setInterval(() => {
+                        contador.innerText = valorAtual;
+                        if (valorAtual < valorFinal) {
+                            valorAtual++;
+                        } else {
+                            clearInterval(animacao);
+                        }
+                    }, 20); // Velocidade da contagem (em ms)
+                });
     </script>
 </body>
 

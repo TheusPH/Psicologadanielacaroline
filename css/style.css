@@ -84,6 +84,14 @@ body {
     background-color: #f0b4b486;
 }
 
+#contador {
+    transition: transform 0.3s ease;
+}
+
+#contador:active {
+    transform: scale(1.1);
+}
+
 /* Minha história */
 
 .top2 {
