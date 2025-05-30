@@ -86,11 +86,12 @@ body {
 
 #contador {
     transition: transform 0.3s ease;
-}
-
-#contador:active {
+  }
+  
+  #contador:active {
     transform: scale(1.1);
-}
+  }
+  
 
 /* Minha história */
 
@@ -754,7 +755,7 @@ footer {
     .imgFinal img {
         width: 50vw;
         max-width: 100%;
-        margin-left: 30px;
+        margin-left: 0;
     }
 
     #face,
