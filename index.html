@@ -1,209 +1,312 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Psicologa Daniela Caroline</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css" />
     <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js"></script>
-</head>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+  </head>
 
-<body>
+  <body>
     <header>
-        <div class="topo">
-            <div class="esquerda">
-                <img src="img/logo-dani.png" alt="logo-dani" id="logoDani">
-                <div class="texto-simbolo1">
-                    <span class="titulo1">Ressignificando <br> vidas.
-                        <img src="img/Simbolo-canva.png" alt="Simbolo-canva" class="simbolo1">
-                    </span>
-                </div>
-                <a href="https://api.whatsapp.com/send?phone=5535984357557" class="botao" target="_blank">
-                    Fale comigo
-                </a>
-            </div>
-            <div class="direita">
-                <img src="img/Foto dani.png" alt="foto dani" id="fotoDani">
-            </div>
+      <div class="topo">
+        <div class="esquerda">
+          <img src="img/logo-dani.png" alt="logo-dani" id="logoDani" />
+          <div class="texto-simbolo1">
+            <span class="titulo1"
+              >Ressignificando <br />
+              vidas.
+              <img
+                src="img/Simbolo-canva.png"
+                alt="Simbolo-canva"
+                class="simbolo1"
+              />
+            </span>
+          </div>
+          <a
+            href="https://api.whatsapp.com/send?phone=5535984357557"
+            class="botao"
+            target="_blank"
+          >
+            Fale comigo
+          </a>
         </div>
+        <div class="direita">
+          <img src="img/Foto dani.png" alt="foto dani" id="fotoDani" />
+        </div>
+      </div>
     </header>
-    <br><br><br>
+    <br /><br /><br />
     <div class="contar">
-        <h1>Total de visitas:</h1>
-        <h2 id="contador">Carregando...</h2>
+      <h1>Total de visitas:</h1>
+      <h2 id="contador">Carregando...</h2>
     </div>
     <main>
-        <div>
-            <!-- Minha história -->
-            <section>
-                <div class="top2">
-                    <div class="esquerda2">
-                        <img src="img/logo-minha-história.png" alt="logo-minha-história" id="minhaHistoria">
-                        <img src="img/fotodani2.jpg" alt="fotodani2" class="fotoDani2">
-                    </div>
-                    <div class="direita2">
-                        <h2>Minha história</h2>
-                        <span>
-                            Olá, sou Daniela, psicóloga clínica.
-                            Formada há cinco anos pela Universidade José do Rosário Vellano (UNIFENAS), tenho
-                            especializações em Saúde Mental,
-                            Psicologia Social, Psicopedagogia e Psicologia Escolar.
-                            <br> <br>
-                            Atendo crianças, adolescentes, adultos e idosos com escuta sensível, ética e
-                            comprometimento. Acredito na psicologia
-                            como uma forma de ressignificar histórias, abrir caminhos e acolher o que precisa ser olhado
-                            com delicadeza e
-                            profundidade.
-                            <br> <br>
-                            Ofereço atendimentos presenciais em Três Corações - MG e também online, para que o cuidado
-                            possa chegar
-                            onde for preciso.
-                        </span>
-                        <br>
-                        <img src="img/Simbolo-canva.png" alt="Simbolo-canva" class="simbolo2">
-                    </div>
-                </div>
-            </section>
-            <!-- Fim minha história -->
-            <br><br><br>
-            <!-- Atendimento -->
-            <section>
-                <div>
-                    <div class="atendimento">
-                        <h1>Atendimentos:</h1>
-                    </div>
-                </div>
-                <div class="coluna distancia">
-                    <div>
-                        <img src="img/crianças.png" alt="crianças" id="fotoAtendimento">
-                        <h1 id="tLetras">Crianças</h1>
-                    </div>
-                    <div>
-                        <img src="img/adolecentes.png" alt="adolecentes" id="fotoAtendimento">
-                        <h1 id="tLetras">Adolecentes</h1>
-                    </div>
-                    <div>
-                        <img src="img/adultos.png" alt="adultos" id="fotoAtendimento">
-                        <h1 id="tLetras">Adultos</h1>
-                    </div>
-                    <div>
-                        <img src="img/Idosos.png" alt="idosos" id="fotoAtendimento">
-                        <h1 id="tLetras">Idosos</h1>
-                    </div>
-                </div>
-                <div class="top3">
-                    <div class="esquerda3">
-                        <span>
-                            “Em cada etapa da vida,
-                            há algo que insiste,
-                            que retorna. A psicanálise nos
-                            convida a escutar esse retorno e transformar
-                            o sofrimento em palavra.”
-                        </span>
-                        <br>
-                        <span>
-                            — inspirado em Freud e Lacan
-                        </span>
-                    </div>
-                    <div class="direita3">
-                        <img src="img/Dani-atendimentos.png" alt="Dani-atendimentos">
-                    </div>
-                </div>
-            </section>
-            <!-- Fim atendimento -->
-            <br><br><br>
-            <!-- Ultimo -->
-            <section>
-                <div class="top4 distancia">
-                    <div class="esquerda4">
-                        <h1>Atendimento Presencial e Online. Entre em contato para agendar seu horário.</h1>
-                        <a href="https://api.whatsapp.com/send?phone=5535984357557" target="_blank" class="botao2">
-                            Fale comigo
-                        </a>
-                    </div>
-                    <div class="direita4">
-                        <img src="img/cerebro.png" alt="cerebro">
-                    </div>
-                </div>
-            </section>
-            <!-- Fim ultimo -->
+      <div>
+        <!-- Minha história -->
+        <section>
+          <div class="top2">
+            <div class="esquerda2">
+              <img
+                src="img/logo-minha-história.png"
+                alt="logo-minha-história"
+                id="minhaHistoria"
+              />
+              <img src="img/fotodani2.jpg" alt="fotodani2" class="fotoDani2" />
+            </div>
+            <div class="direita2">
+              <h2>Minha história</h2>
+              <span>
+                Olá, sou Daniela, psicóloga clínica. Formada há cinco anos pela
+                Universidade José do Rosário Vellano (UNIFENAS), tenho
+                especializações em Saúde Mental, Psicologia Social,
+                Psicopedagogia e Psicologia Escolar.
+                <br />
+                <br />
+                Atendo crianças, adolescentes, adultos e idosos com escuta
+                sensível, ética e comprometimento. Acredito na psicologia como
+                uma forma de ressignificar histórias, abrir caminhos e acolher o
+                que precisa ser olhado com delicadeza e profundidade.
+                <br />
+                <br />
+                Ofereço atendimentos presenciais em Três Corações - MG e também
+                online, para que o cuidado possa chegar onde for preciso.
+              </span>
+              <br />
+              <img
+                src="img/Simbolo-canva.png"
+                alt="Simbolo-canva"
+                class="simbolo2"
+              />
+            </div>
+          </div>
+        </section>
+        <!-- Fim minha história -->
+        <br /><br /><br />
+        <!-- Atendimento -->
+        <section>
+          <div>
+            <div class="atendimento">
+              <h1>Atendimentos:</h1>
+            </div>
+          </div>
+          <div class="coluna distancia">
+            <div>
+              <img src="img/crianças.png" alt="crianças" id="fotoAtendimento" />
+              <h1 id="tLetras">Crianças</h1>
+            </div>
+            <div>
+              <img
+                src="img/adolecentes.png"
+                alt="adolecentes"
+                id="fotoAtendimento"
+              />
+              <h1 id="tLetras">Adolecentes</h1>
+            </div>
+            <div>
+              <img src="img/adultos.png" alt="adultos" id="fotoAtendimento" />
+              <h1 id="tLetras">Adultos</h1>
+            </div>
+            <div>
+              <img src="img/Idosos.png" alt="idosos" id="fotoAtendimento" />
+              <h1 id="tLetras">Idosos</h1>
+            </div>
+          </div>
+          <div class="top3">
+            <div class="esquerda3">
+              <span>
+                “Em cada etapa da vida, há algo que insiste, que retorna. A
+                psicanálise nos convida a escutar esse retorno e transformar o
+                sofrimento em palavra.”
+              </span>
+              <br />
+              <span> — inspirado em Freud e Lacan </span>
+            </div>
+            <div class="direita3">
+              <img src="img/Dani-atendimentos.png" alt="Dani-atendimentos" />
+            </div>
+          </div>
+        </section>
+        <!-- Fim atendimento -->
+        <br /><br /><br />
+        <!-- Ultimo -->
+        <section>
+          <div class="top4 distancia">
+            <div class="esquerda4">
+              <h1>
+                Atendimento Presencial e Online. Entre em contato para agendar
+                seu horário.
+              </h1>
+              <a
+                href="https://api.whatsapp.com/send?phone=5535984357557"
+                target="_blank"
+                class="botao2"
+              >
+                Fale comigo
+              </a>
+            </div>
+            <div class="direita4">
+              <img src="img/cerebro.png" alt="cerebro" />
+            </div>
+          </div>
+        </section>
+      </div>
+      <br /><br /><br />
+      <div class="caixa5">
+        <div class="esquerda5">
+          <h1 style="padding: 20px; margin-bottom: 30px">
+            Avalie sua <br />
+            consulta:
+          </h1>
+          <h3>Sua opinião importa!!!</h3>
+          <div class="google">
+            <button id="login-btn">
+              Entre com o Google para deixar sua avaliação
+            </button>
+          </div>
         </div>
-        <br><br><br>
+        <div class="direita5">
+          <h3>*Seu nome:</h3>
+          <input type="text" placeholder="Digite seu nome:" />
+          <h3>*Qual sua avalição:</h3>
+          <input type="text" placeholder="Digite um número de 1 à 5:" />
+          <h3>*Deixe um comentário aqui:</h3>
+          <input
+            type="text"
+            placeholder="Deixe seu comentário aqui:"
+            class="comentario"
+            style="margin-bottom: 30px"
+          />
+          <button id="enviar-btn">Enviar</button>
+        </div>
+      </div>
+      <!-- Fim ultimo -->
     </main>
     <footer>
-        <div class="top5">
-            <div class="entreEm">
-                <h2>Entre em contato:</h2>
-                <span>
-                    Rua Sagrado Coração de Jesus, n°14, <br>
-                    sala 6, Centro. <br>
-                    Três Corações - MG <br>
-                    Tel: <a href="tel:+5535984357557" class="link1">(35) 98435-7557</a> <br>
-                    <a href="mailto:danielacaroline.psicologa@gmail.com" class="link1">
-                        danielacaroline.psicologa@gmail.com
-                    </a>
-                </span>
-            </div>
-            <div class="redesSocias">
-                <h2>Redes sociais:</h2>
-                <div class="arumar">
-                    <a href="https://www.facebook.com/psicologadanielacaroline?mibextid=ZbWKwL" target="_blank">
-                        <img src="img/logo-facebook.png" alt="logo-facebook" id="face">
-                    </a>
-                    <a href="https://www.instagram.com/psicologadanielacaroline?igsh=OHk3bDFiNjZxbGgy" target="_blank">
-                        <img src="img/imagem-instagram.png" alt="imagem-instagram" id="insta">
-                    </a>
-                </div>
-            </div>
-            <div class="imgFinal">
-                <img src="img/logo-minha-história.png" alt="dani-rodape">
-            </div>
+      <div class="top5">
+        <div class="entreEm">
+          <h2>Entre em contato:</h2>
+          <span>
+            Rua Sagrado Coração de Jesus, n°14, <br />
+            sala 6, Centro. <br />
+            Três Corações - MG <br />
+            Tel: <a href="tel:+5535984357557" class="link1">(35) 98435-7557</a>
+            <br />
+            <a href="mailto:danielacaroline.psicologa@gmail.com" class="link1">
+              danielacaroline.psicologa@gmail.com
+            </a>
+          </span>
         </div>
+        <div class="redesSocias">
+          <h2>Redes sociais:</h2>
+          <div class="arumar">
+            <a
+              href="https://www.facebook.com/psicologadanielacaroline?mibextid=ZbWKwL"
+              target="_blank"
+            >
+              <img src="img/logo-facebook.png" alt="logo-facebook" id="face" />
+            </a>
+            <a
+              href="https://www.instagram.com/psicologadanielacaroline?igsh=OHk3bDFiNjZxbGgy"
+              target="_blank"
+            >
+              <img
+                src="img/imagem-instagram.png"
+                alt="imagem-instagram"
+                id="insta"
+              />
+            </a>
+          </div>
+        </div>
+        <div class="imgFinal">
+          <img src="img/logo-minha-história.png" alt="dani-rodape" />
+        </div>
+      </div>
     </footer>
 
     <script>
-         // Configuração do Firebase
-            const firebaseConfig = {
-                apiKey: "AIzaSyDoYy5IrJ60ETcaw5pnOG2BaxTTgOD1apM",
-                authDomain: "site-psicologa-dani.firebaseapp.com",
-                databaseURL: "https://site-psicologa-dani-default-rtdb.firebaseio.com",
-                projectId: "site-psicologa-dani",
-                storageBucket: "site-psicologa-dani.appspot.com",
-                messagingSenderId: "290425493735",
-                appId: "1:290425493735:web:dc2d6c8af863854266a42",
-                measurementId: "G-WT0VM5VEFH"
-            };
+      // Configuração do Firebase
+      const firebaseConfig = {
+        apiKey: "AIzaSyDoYy5IrJ60ETcaw5pnOG2BaxTTgOD1apM",
+        authDomain: "site-psicologa-dani.firebaseapp.com",
+        databaseURL: "https://site-psicologa-dani-default-rtdb.firebaseio.com",
+        projectId: "site-psicologa-dani",
+        storageBucket: "site-psicologa-dani.appspot.com",
+        messagingSenderId: "290425493735",
+        appId: "1:290425493735:web:dc2d6c8af863854266a42",
+        measurementId: "G-WT0VM5VEFH",
+      };
 
-            // Inicializa o Firebase
-            const app = firebase.initializeApp(firebaseConfig);
-            const database = firebase.database();
+      // Inicializa o Firebase
+      const app = firebase.initializeApp(firebaseConfig);
+      const database = firebase.database();
 
-            // Referência ao contador
-            const contadorRef = database.ref("visitas");
+      // Referência ao contador
+      const contadorRef = database.ref("visitas");
 
-            // Atualiza contador no banco
-            contadorRef.transaction((valorAtual) => {
-                return (valorAtual || 0) + 1;
+      // Atualiza contador no banco
+      contadorRef.transaction((valorAtual) => {
+        return (valorAtual || 0) + 1;
+      });
+
+      // Mostra o contador na tela
+      contadorRef.on("value", (snapshot) => {
+        const contador = document.getElementById("contador");
+        const valorFinal = snapshot.val();
+        let valorAtual = 0;
+
+        const animacao = setInterval(() => {
+          contador.innerText = valorAtual;
+          if (valorAtual < valorFinal) {
+            valorAtual++;
+          } else {
+            clearInterval(animacao);
+          }
+        }, 20); // Velocidade da contagem (em ms)
+      });
+
+      const auth = firebase.auth();
+
+    // Botão de login com Google
+    const loginBtn = document.getElementById("login-btn");
+    loginBtn.addEventListener("click", () => {
+        const provider = new firebase.auth.GoogleAuthProvider();
+        auth.signInWithPopup(provider)
+            .then(() => {
+                document.getElementById("avaliacao-section").style.display = "block";
+                loginBtn.style.display = "none";
+            })
+            .catch((error) => {
+                console.error("Erro ao fazer login:", error);
+                alert("Erro ao fazer login. Tente novamente.");
             });
+    });
 
-            // Mostra o contador na tela
-            contadorRef.on("value", (snapshot) => {
-                    const contador = document.getElementById("contador");
-                    const valorFinal = snapshot.val();
-                    let valorAtual = 0;
+    // Envio de comentário
+    document.getElementById("enviar-btn").addEventListener("click", () => {
+        const nome = document.getElementById("nome").value.trim();
+        const nota = document.getElementById("avaliacao").value.trim();
+        const comentario = document.getElementById("comentario").value.trim();
 
-                    const animacao = setInterval(() => {
-                        contador.innerText = valorAtual;
-                        if (valorAtual < valorFinal) {
-                            valorAtual++;
-                        } else {
-                            clearInterval(animacao);
-                        }
-                    }, 20); // Velocidade da contagem (em ms)
-                });
+        if (nome && nota && comentario) {
+            firebase.database().ref("comentarios").push({
+                nome: nome,
+                nota: nota,
+                comentario: comentario,
+                timestamp: Date.now()
+            }).then(() => {
+                alert("Comentário enviado com sucesso!");
+                document.getElementById("nome").value = "";
+                document.getElementById("avaliacao").value = "";
+                document.getElementById("comentario").value = "";
+            });
+        } else {
+            alert("Preencha todos os campos antes de enviar.");
+        }
+    });
     </script>
-</body>
-
+  </body>
 </html>
