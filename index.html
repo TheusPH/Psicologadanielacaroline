@@ -155,33 +155,6 @@
         </section>
       </div>
       <br /><br /><br />
-      <!-- <div class="caixa5">
-        <div class="esquerda5">
-          <h1 style="padding: 20px; margin-bottom: 30px">
-            Avalie sua <br />
-            consulta:
-          </h1>
-          <h3>Sua opinião importa!!!</h3>
-          <div class="google">
-            <button id="login-btn">
-              Entre com o Google para deixar sua avaliação
-            </button>
-          </div>
-        </div>
-        <div class="direita5">
-          <h3>*Seu nome:</h3>
-          <input type="text" placeholder="Digite seu nome:" />
-          <h3>*Qual sua avalição:</h3>
-          <input type="text" placeholder="Digite um número de 1 à 5:" />
-          <h3>*Deixe um comentário aqui:</h3>
-          <input
-            type="text"
-            placeholder="Deixe seu comentário aqui:"
-            class="comentario"
-            style="margin-bottom: 30px"
-          />
-          <button id="enviar-btn">Enviar</button>
-        </div> -->
       </div>
       <!-- Fim ultimo -->
     </main>
@@ -267,46 +240,6 @@
           }
         }, 20); // Velocidade da contagem (em ms)
       });
-
-      /* const auth = firebase.auth();
-
-    // Botão de login com Google
-    const loginBtn = document.getElementById("login-btn");
-    loginBtn.addEventListener("click", () => {
-        const provider = new firebase.auth.GoogleAuthProvider();
-        auth.signInWithPopup(provider)
-            .then(() => {
-                document.getElementById("avaliacao-section").style.display = "block";
-                loginBtn.style.display = "none";
-            })
-            .catch((error) => {
-                console.error("Erro ao fazer login:", error);
-                alert("Erro ao fazer login. Tente novamente.");
-            });
-    });
-
-    // Envio de comentário
-    document.getElementById("enviar-btn").addEventListener("click", () => {
-        const nome = document.getElementById("nome").value.trim();
-        const nota = document.getElementById("avaliacao").value.trim();
-        const comentario = document.getElementById("comentario").value.trim();
-
-        if (nome && nota && comentario) {
-            firebase.database().ref("comentarios").push({
-                nome: nome,
-                nota: nota,
-                comentario: comentario,
-                timestamp: Date.now()
-            }).then(() => {
-                alert("Comentário enviado com sucesso!");
-                document.getElementById("nome").value = "";
-                document.getElementById("avaliacao").value = "";
-                document.getElementById("comentario").value = "";
-            });
-        } else {
-            alert("Preencha todos os campos antes de enviar.");
-        }
-    }); */
     </script>
   </body>
 </html>
